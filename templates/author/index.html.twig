@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ajouter un auteur{% endblock %}
+
+{% block body %}
+    <main class="container m-auto">
+        <h1>Ajouter un auteur</h1>
+        <div class="m-5">
+            {% form_theme form 'bootstrap_5_layout.html.twig' %}
+            {{ form(form) }}
+        </div>
+
+    </main>
+{% endblock %}
